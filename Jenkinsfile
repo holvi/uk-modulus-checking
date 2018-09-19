@@ -51,6 +51,7 @@ pipeline {
         stage('Package') {
             when {
                 anyOf {
+                    branch 'testing'
                     branch 'master'
                 }
             }
